@@ -315,8 +315,9 @@ p {
 }
 
 .menu a {
+    /*LETRA MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -345,10 +346,9 @@ p {
     .menu-btn {
         display: none;
     }
-
+/*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
     .menu {
         position: static;
-        gap: 60px;
         width: auto;
         flex-direction: row;
         opacity: 1;
@@ -423,15 +423,17 @@ selector avanzado*/
 }
 
 .btn {
-    border-radius: .5rem;
-    padding: 1rem;
     display: inline-block;
-    width: 200px;
+    padding-top: 0.2rem;
+    height: 20px;
+    width: 280px;
     font-weight: bold;
+    font-size: 11px;
     text-align: center;
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--first-color);
+    cursor: pointer;
 }
 
 /* Progress Bar  */
@@ -583,6 +585,7 @@ progress::-moz-progress-bar {
     background-color: var(--second-color);
 }
 
+
 .header>.container {
     display: flex;
     justify-content: space-between;
@@ -689,6 +692,10 @@ progress::-moz-progress-bar {
     height: 1.5rem;
 }
 
+.cu {
+    cursor: pointer;
+}
+
 /** tablet*/
 @media screen and (min-width: 768px) {
 
@@ -777,4 +784,6 @@ progress::-moz-progress-bar {
         /*Titulo ocupa 2 celdas*/
         grid-column: span 3;
     }
+
 }
+

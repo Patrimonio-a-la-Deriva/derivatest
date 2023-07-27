@@ -1,4 +1,12 @@
+import Boton from "./boton.js";
+
 //Funciones anonimas auto ejecutables Menu botones
+const d = document;
+
+
+d.addEventListener('DOMContentLoaded', (e) => {
+    Boton('#btn', "#text2", "#img2", "#btn2");
+});
 ((d) => {
     const $btnMenu = d.querySelector('.menu-btn'),
         $menu = d.querySelector('.menu');
@@ -57,8 +65,3 @@
 })(document);
 
 
-//https://github.com/JonNauto/proyecto/portafolio
-//https://JonNauto.github.io/proyecto/portafolio
-
-
-//Reposito CV Portafolio
