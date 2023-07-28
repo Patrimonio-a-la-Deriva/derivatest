@@ -18,9 +18,10 @@
     --black-alpha-color: rgba(0, 0, 0, 0.5);
     --font: 'Raleway', sans-serif;
     --max-width: 1200px;
-    --header-height: 5rem;
+    --header-height: 3.0rem;
 }
 
+/*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
 /* Reseteo */
 /*Reseteo modelo de caja
   Se utiliza rem = pixeles*/
@@ -123,9 +124,8 @@ p {
 }
 
 .carousel {
-    margin: 2rem auto;
-    padding: 2rem 0;
-    max-width: 800px;
+
+    max-width: 500px;
     text-align: center;
     /*Eliminar carta lateral*/
     overflow-x: hidden;
@@ -233,6 +233,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+
     .contact-form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -273,7 +274,7 @@ p {
 .hero-image {
     background-image: var(--hero-image);
     background-repeat: no-repeat;
-   
+
     background-position: center;
     background-attachment: var(--hero-attachment);
 }
@@ -343,10 +344,12 @@ p {
 
 /* Menu bajo */
 @media screen and (min-width: 1024px) {
+
     .menu-btn {
         display: none;
     }
-/*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
+
+    /*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
     .menu {
         position: static;
         width: auto;
@@ -413,9 +416,9 @@ selector avanzado*/
 /* Utilidades */
 
 .avatar {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border-radius: 10%;
+    width: 350px;
+    height: 250px;
 }
 
 .bg-gray-light {
@@ -435,6 +438,7 @@ selector avanzado*/
     background-color: var(--first-color);
     cursor: pointer;
 }
+
 
 /* Progress Bar  */
 
@@ -574,6 +578,7 @@ progress::-moz-progress-bar {
     background-color: var(--third-color);
 }
 
+/*------------------------------------------------------------*/
 .header {
     position: fixed;
     left: 0;
@@ -581,7 +586,7 @@ progress::-moz-progress-bar {
     z-index: 999;
     padding: 1rem;
     width: 100%;
-    height: var(--header-height);
+    height: 3.0rem;
     background-color: var(--second-color);
 }
 
@@ -735,11 +740,12 @@ progress::-moz-progress-bar {
         margin-left: 1rem;
         align-self: center;
     }
+    
 }
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
-
+   
     .footer {
         margin-bottom: 0;
     }
@@ -756,10 +762,11 @@ progress::-moz-progress-bar {
         grid-template-columns: repeat(4, 24%);
     }
 
+    /*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUARRIBA*/
     .header {
         position: sticky;
         top: 0;
-        padding: 1.5rem;
+        padding: .7rem;
         height: calc(var(--header-height) - .5rem);
     }
 
@@ -785,5 +792,30 @@ progress::-moz-progress-bar {
         grid-column: span 3;
     }
 
+    .xx{
+        display: none;
+    }
+    #pr{
+        display: none;
+    }
+
 }
 
+/*desktop*/
+@media screen and (max-width: 1024px) {
+    .btn{
+        display: none;
+    }
+
+    .xx{
+        display: inline-block;
+    }
+
+    #stgo{
+        display: none;
+    }
+    #btn2{
+        display: none;
+    }
+
+}
