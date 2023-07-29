@@ -439,6 +439,20 @@ selector avanzado*/
     cursor: pointer;
 }
 
+.btnx2 {
+    display: inline-block;
+    padding-top: 0.2rem;
+    height: 20px;
+    width: 280px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    cursor: pointer;
+}
+
 
 /* Progress Bar  */
 
@@ -795,6 +809,7 @@ progress::-moz-progress-bar {
     .xx{
         display: none;
     }
+
     #pr{
         display: none;
     }
@@ -810,6 +825,7 @@ progress::-moz-progress-bar {
     .xx{
         display: inline-block;
     }
+    
 
     #stgo{
         display: none;
@@ -818,4 +834,19 @@ progress::-moz-progress-bar {
         display: none;
     }
 
+}
+
+.containerr{
+   margin: 6px;
+}
+
+.containerr path {
+    fill: black;
+    stroke: antiquewhite;
+    stroke-width: 2px;
+}
+
+.containerr :hover{
+fill: grey;
+border: 1px solid #fff;
 }

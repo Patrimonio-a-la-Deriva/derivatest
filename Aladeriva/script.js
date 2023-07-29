@@ -7,7 +7,7 @@ const d = document;
 
 d.addEventListener('DOMContentLoaded', (e) => {
     Boton('#btn', "#text2", "#img2", "#btn2", "#img1");
-    Boton2("#pr");
+    Boton2("#path13821", "#selector");
 });
 ((d) => {
     const $btnMenu = d.querySelector('.menu-btn'),
