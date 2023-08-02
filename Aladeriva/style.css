@@ -848,9 +848,8 @@ progress::-moz-progress-bar {
 
     /*Mapa Chico*/
     .max {
-        width: 250px;
-        height: 200px;
-        padding-right: 0px;
+        width: 550px;
+        height: 500px;
     }
 
     .leftchico {
@@ -868,7 +867,7 @@ progress::-moz-progress-bar {
     }
     /* padding completo mapa resolucion pequeña*/
     .containerr{
-     padding-right: 200px;
+     padding-right: 300px;
     }
 
 
