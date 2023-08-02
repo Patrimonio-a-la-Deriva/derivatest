@@ -722,7 +722,7 @@ progress::-moz-progress-bar {
 
 /** tablet*/
 @media screen and (min-width: 768px) {
-   
+
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -821,7 +821,7 @@ progress::-moz-progress-bar {
 
     .btn {
         margin-bottom: 2px;
-        
+
     }
 
 }
@@ -830,7 +830,7 @@ progress::-moz-progress-bar {
 @media screen and (max-width: 1024px) {
     .btn {
         display: none;
-      
+
     }
 
     .xx {
@@ -845,11 +845,12 @@ progress::-moz-progress-bar {
     #btn2 {
         display: none;
     }
+
     /*Mapa Chico*/
     .max {
-        width: 550px;
-        height: 500px;
-        padding-right: 50px;
+        width: 250px;
+        height: 200px;
+        padding-right: 0px;
     }
 
     .leftchico {
@@ -865,7 +866,11 @@ progress::-moz-progress-bar {
         margin-bottom: 2px;
         width: 100;
     }
-   
+    /* padding completo mapa resolucion pequeña*/
+    .containerr{
+     padding-right: 200px;
+    }
+
 
 }
 
