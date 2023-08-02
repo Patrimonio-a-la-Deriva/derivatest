@@ -103,8 +103,8 @@ p {
 
 /* Componentes */
 
-/*                       Carousel              */
-/* Animacion carousel sin interaccion */
+
+/* Animacion carousel sin interaccion
 @keyframes carousel-slide {
     0% {
         transform: translateX(0%);
@@ -122,6 +122,7 @@ p {
         transform: translateX(-75%);
     }
 }
+*/
 
 .carousel {
 
@@ -137,6 +138,7 @@ p {
 }
 
 /* Animacion carusel  por cada slide que tenga hay que sumar 100%*/
+/*Pedding Left OJO*/
 .carousel .slides {
     padding-left: 0;
     width: 400%;
@@ -405,6 +407,8 @@ p {
     fill: var(--first-color);
 }
 
+vatar
+
 /*Se abre  metodo statico pipe | evalua que id empieze con palabra x = trabajo
 selector avanzado*/
 /* CSS AVANZADO */
@@ -416,9 +420,9 @@ selector avanzado*/
 /* Utilidades */
 
 .avatar {
-    border-radius: 10%;
-    width: 350px;
-    height: 250px;
+    border-radius: 2%;
+    width: 750px;
+    height: 500px;
 }
 
 .bg-gray-light {
@@ -427,30 +431,31 @@ selector avanzado*/
 
 .btn {
     display: inline-block;
-    padding-top: 0.2rem;
-    height: 20px;
+    padding-top: 0.7rem;
+    height: 40px;
     width: 280px;
     font-weight: bold;
     font-size: 11px;
     text-align: center;
     text-decoration: none;
-    color: var(--white-color);
-    background-color: var(--first-color);
+    color: var(--first-color);
+    background-color: var(--second-color);
     cursor: pointer;
 }
 
 .btnx2 {
     display: inline-block;
-    padding-top: 0.2rem;
-    height: 20px;
-    width: 280px;
+    padding-top: 0.5rem;
+    height: 40px;
+    width: 100%;
     font-weight: bold;
     font-size: 11px;
     text-align: center;
     text-decoration: none;
-    color: var(--white-color);
-    background-color: var(--first-color);
+    color: var(--first-color);
+    background-color: var(--second-color);
     cursor: pointer;
+    font-size: 20px;
 }
 
 
@@ -717,7 +722,7 @@ progress::-moz-progress-bar {
 
 /** tablet*/
 @media screen and (min-width: 768px) {
-
+   
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -754,12 +759,12 @@ progress::-moz-progress-bar {
         margin-left: 1rem;
         align-self: center;
     }
-    
+
 }
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
-   
+
     .footer {
         margin-bottom: 0;
     }
@@ -806,47 +811,88 @@ progress::-moz-progress-bar {
         grid-column: span 3;
     }
 
-    .xx{
+    .xx {
         display: none;
     }
 
-    #pr{
+    #pr {
         display: none;
+    }
+
+    .btn {
+        margin-bottom: 2px;
+        
     }
 
 }
 
 /*desktop*/
 @media screen and (max-width: 1024px) {
-    .btn{
+    .btn {
         display: none;
+      
     }
 
-    .xx{
+    .xx {
         display: inline-block;
     }
-    
 
-    #stgo{
+
+    #stgo {
         display: none;
     }
-    #btn2{
+
+    #btn2 {
         display: none;
     }
+
+    .max {
+        width: 600px;
+        height: 500px;
+    }
+
+    .leftchico {
+        text-align: left;
+    }
+
+    .avatar {
+        height: 400px;
+        width: 300px;
+    }
+
+    .btn {
+        margin-bottom: 2px;
+        width: 100;
+    }
+   
 
 }
 
-.containerr{
-   margin: 6px;
+.containerr {
+    margin: 6px;
 }
 
 .containerr path {
-    fill: black;
-    stroke: antiquewhite;
+    fill: var(--second-color);
+    stroke: rgb(12, 7, 1);
     stroke-width: 2px;
 }
 
-.containerr :hover{
-fill: grey;
-border: 1px solid #fff;
+.containerr :hover {
+    fill: grey;
+    border: 1px solid #fff;
+}
+
+.ctn {
+    background-color: #BF702A;
+    width: 80%;
+}
+
+.margintop {
+    margin-bottom: 160px;
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
 }
