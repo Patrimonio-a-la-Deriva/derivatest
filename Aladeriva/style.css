@@ -16,7 +16,7 @@
     --text-color: #222;
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
-    --font: 'Raleway', sans-serif;
+    --font: 'Poppins', 'Open+Sans';
     --max-width: 1200px;
     --header-height: 3.0rem;
 }
@@ -29,7 +29,7 @@
 html {
     box-sizing: border-box;
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 17px;
     scroll-behavior: smooth;
 }
 
@@ -421,8 +421,8 @@ selector avanzado*/
 
 .avatar {
     border-radius: 2%;
-    width: 750px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
 }
 
 .bg-gray-light {
