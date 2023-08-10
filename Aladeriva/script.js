@@ -1,13 +1,15 @@
 import Boton from "./boton.js";
 import Boton2 from "./boton2.js";
+import Boton3 from "./boton3.js";
 
 //Funciones anonimas auto ejecutables Menu botones
 const d = document;
 
 
 d.addEventListener('DOMContentLoaded', (e) => {
-    Boton('#btn', "#text2", "#img2", "#btn2", "#img1", "#pr","#monu", "#text3", "#imx1", "#imx12");
+    Boton('#btn', "#text2", "#img2", "#btn2", "#img1", "#pr", "#monu", "#text3", "#imx1", "#imx12");
     Boton2("#path13821", "#selector");
+    Boton3("#path13071", "#selector");
 });
 ((d) => {
     const $btnMenu = d.querySelector('.menu-btn'),

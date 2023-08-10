@@ -125,13 +125,14 @@ p {
 */
 
 .carousel {
-
+    
     max-width: 500px;
     text-align: center;
     /*Eliminar carta lateral*/
     overflow-x: hidden;
     background-color: var(--carousel-bg-color);
 }
+
 
 .carousel input {
     display: none;
@@ -151,7 +152,7 @@ p {
 .carousel label {
     border: medium solid var(--gray-dark-color);
     border-radius: 50%;
-    margin: 0 .25rem;
+    margin: 0.25rem;
     display: inline-block;
     width: .75rem;
     height: .75rem;
@@ -180,6 +181,32 @@ p {
 #slide-2:checked~.slides-nav label#dot-2,
 #slide-3:checked~.slides-nav label#dot-3,
 #slide-4:checked~.slides-nav label#dot-4 {
+    background-color: var(--gray-dark-color);
+}
+
+
+/* Mover mis clientes  se divide entre la cantidad de tarjetas*/
+#slide-11:checked~.slides {
+    transform: translateX(0%);
+}
+
+#slide-21:checked~.slides {
+    transform: translateX(-25%);
+}
+
+#slide-31:checked~.slides {
+    transform: translateX(-50%);
+}
+
+#slide-41:checked~.slides {
+    transform: translateX(-75%);
+}
+
+/*Checked*/
+#slide-11:checked~.slides-nav label#dot-11,
+#slide-21:checked~.slides-nav label#dot-21,
+#slide-31:checked~.slides-nav label#dot-31,
+#slide-41:checked~.slides-nav label#dot-41 {
     background-color: var(--gray-dark-color);
 }
 
@@ -420,10 +447,22 @@ selector avanzado*/
 /* Utilidades */
 
 .avatar {
-    border-radius: 2%;
+    border-radius: 1%;
     width: 350px;
     height: 450px;
 }
+
+.contenedor {
+   width: 75vh;
+   max-width: 1000px;
+   min-width: 320px;
+   margin: auto;
+  }
+  
+  .contenedor img {
+    width: 100%;
+    border-radius: 15px;
+  }
 
 .bg-gray-light {
     background-color: var(--gray-light-color);
@@ -445,15 +484,13 @@ selector avanzado*/
 
 .btnx2 {
     display: inline-block;
-    padding-top: 0.5rem;
+    margin-right: 200px;
     height: 40px;
-    width: 100%;
     font-weight: bold;
     font-size: 11px;
     text-align: center;
     text-decoration: none;
     color: var(--first-color);
-    background-color: var(--second-color);
     cursor: pointer;
     font-size: 20px;
 }
@@ -823,6 +860,10 @@ progress::-moz-progress-bar {
         margin-bottom: 2px;
 
     }
+    .grande{
+        display: none;
+    }
+
 
 }
 
@@ -871,6 +912,9 @@ progress::-moz-progress-bar {
      padding-right: 300px;
     }
 
+    .esconder{
+        display: none;
+    }
 
 }
 
