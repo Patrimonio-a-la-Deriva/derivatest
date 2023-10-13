@@ -10,7 +10,7 @@ const d = document;
 
 d.addEventListener('DOMContentLoaded', (e) => {
     Boton('#btn', "#text2", "#img2", "#img1", "#pr", "#monu", "#text3", "#imx1", "#imx12");
-    Boton2("#path13821", "#selector", ".modal", "#btn22", "#text", "#textalemana", "#imgEscritoresOne", "#imgAlemanaOne", "#imgAlemanaTwo", "#imgEscritoresTwo", "#imgEscritoresThree", "#imgAlemanaThree", "#stgocapitulo1", "#btn222", "#closeWindow");
+    Boton2("#path13821", "#selector", ".modal", "#btn22", "#text", "#textalemana", "#imgEscritoresOne", "#imgAlemanaOne", "#imgAlemanaTwo", "#imgEscritoresTwo", "#imgEscritoresThree", "#imgAlemanaThree", "#stgocapitulo1", "#btn222", "#closeWindow", "#prd");
     Boton3("#path13071", "#selector", ".modaldos", "#btn2", "#textGenio", "#textBaquedano", "#cerrarProvidencia");
     Boton4("#path13000", "#selector");
 

@@ -20,6 +20,7 @@
     --max-width: 1500px;
     --header-height: 3.0rem;
 }
+
 /*Esta en 1200 max width
 /*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
 /* Reseteo */
@@ -225,7 +226,7 @@ ul.slides {
     padding: 0;
     overflow: hidden;
     list-style: none;
-    
+
 }
 
 .slides * {
@@ -257,6 +258,7 @@ ul.slides input {
     opacity: 0;
     transition: all .7s ease-in-out;
 }
+
 /* ver */
 .slide-image img {
     width: auto;
@@ -276,7 +278,7 @@ ul.slides input {
     z-index: 999;
     font-size: 100px;
     line-height: 600px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .carousel-controls label {
@@ -317,12 +319,13 @@ ul.slides input {
     text-align: center;
 }
 
+/* BOtones imag*/
 .carousel-dots .carousel-dot {
     display: inline-block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #503333;
     opacity: 0.5;
     margin: 10px;
 }
@@ -351,144 +354,6 @@ input:checked+.slide-container .nav label {
     display: block;
 }
 
-
-/* CARROUSEL PROVIDENCIA */
-.carouseln {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-ul.slidesn {
-    display: block;
-    position: relative;
-    height: 600px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
-}
-
-.slidesn * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
-ul.slidesn input {
-    display: none;
-}
-
-
-.slide-containern {
-    display: block;
-}
-/*AJUTAR HEIGHT WITH DEPENDIENDO DE LA IMAGEN */
-.slide-imagen {
-    display: block;
-    position: absolute;
-    width: 100%;
-
-
-
-    height: 90%;
-    top: 0;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-}
-
-.slide-imagen img {
-    width: auto;
-    align-items: center;
-    min-width: 50%;
-    height: 120%;
-
-}
-
-.carousel-controlsn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    font-size: 100px;
-    line-height: 600px;
-    color: #fff;
-}
-
-.carousel-controlsn label {
-    display: none;
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0;
-    transition: opacity .2s;
-    cursor: pointer;
-}
-
-.slide-imagen:hover+.carousel-controlsn label {
-    opacity: 0.5;
-}
-
-.carousel-controlsn label:hover {
-    opacity: 1;
-}
-
-.carousel-controlsn .prev-sliden {
-    width: 49%;
-    text-align: left;
-    left: 0;
-}
-
-.carousel-controlsn .next-sliden {
-    width: 49%;
-    text-align: right;
-    right: 0;
-}
-
-.carousel-dotsn {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 999;
-    text-align: center;
-}
-
-.carousel-dotsn .carousel-dotn {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 10px;
-}
-
-input:checked+.slide-containern .slide-imagen {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked+.slide-containern .carousel-controlsn label {
-    display: block;
-}
-
-input#img-1n:checked~.carousel-dotsn label#img-dot-1n,
-input#img-2n:checked~.carousel-dotsn label#img-dot-2n,
-input#img-3n:checked~.carousel-dotsn label#img-dot-3n,
-input#img-4n:checked~.carousel-dotsn label#img-dot-4n,
-input#img-5n:checked~.carousel-dotsn label#img-dot-5n,
-input#img-6n:checked~.carousel-dotsn label#img-dot-6n {
-    opacity: 1;
-}
-
-
-input:checked+.slide-containern .nav label {
-    display: block;
-}
 
 /* Contact Form */
 
@@ -1097,10 +962,7 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (max-width: 1024px) {
-    .btn {
-        display: none;
-
-    }
+   
 
     .xx {
         display: inline-block;
@@ -1151,12 +1013,13 @@ progress::-moz-progress-bar {
         margin-right: 1%;
     }
 
+    /*Carrousel Vista celular */
     .slide-image {
         display: block;
         position: absolute;
         width: 100%;
-    
-        height: 30%;
+        /*Quote abajo de carousel*/
+        height: 45%;
         top: 0;
         opacity: 0;
         transition: all .7s ease-in-out;
@@ -1166,24 +1029,58 @@ progress::-moz-progress-bar {
     ul.slides {
         display: block;
         position: relative;
-        height: 250px;
-     
+        /*porte imagen*/
+        height: 580px;
         margin: 0;
         padding: 0;
         overflow: hidden;
         list-style: none;
-       
+
     }
 
     .slide-image img {
         width: auto;
         align-items: center;
         min-width: 50%;
-        height: 400%;
-    
+        height: 200%;
+        border-radius: 1%;
+
     }
+
+    .carousel-controls {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        font-size: 100px;
+        line-height: 600px;
+        color: rgb(251, 207, 15);
+    }
+
+    .carousel-controls label {
+        display: none;
+        position: absolute;
+        padding: 0 20px;
+        opacity: 0;
+        transition: opacity .2s;
+        cursor: pointer;
+    }
+
+    .carousel-dots .carousel-dot {
+        display: none;
+    }
+
+    .letra {
+        font-size: 12px;
+    }
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++*/
     
-    
+}
+
+.color {
+    background-color: red;
 }
 
 .containerr {

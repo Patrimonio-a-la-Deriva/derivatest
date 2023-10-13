@@ -1,9 +1,9 @@
 const d = document,
     w = window;
 
-    
 
-export default function Boton2(pr, selector, modal, btn2, text, textalemana, imgEscriOne, imgAlemanaOne, imgAlemanaTwo, imgEscriTwo, imgEscriThree, imgAlemanaThree, stgoTitulo, btn222, closeWindow) {
+
+export default function Boton2(pr, selector, modal, btn2, text, textalemana, imgEscriOne, imgAlemanaOne, imgAlemanaTwo, imgEscriTwo, imgEscriThree, imgAlemanaThree, stgoTitulo, btn222, closeWindow, prd) {
     const $pr = d.querySelector(pr),
         $select = d.querySelector(selector),
         $modal = d.querySelector(modal),
@@ -18,7 +18,8 @@ export default function Boton2(pr, selector, modal, btn2, text, textalemana, img
         $imgAlemanaThree = d.querySelector(imgAlemanaThree),
         $stgoTitulo = d.querySelector(stgoTitulo),
         $btn222 = d.querySelector(btn222),
-        $close = d.querySelector(closeWindow);
+        $close = d.querySelector(closeWindow),
+        $prd = d.querySelector(prd);
 
     d.addEventListener('mouseover', (e) => {
         if (e.target.matches(pr)) {
@@ -36,10 +37,18 @@ export default function Boton2(pr, selector, modal, btn2, text, textalemana, img
     })
 
     d.addEventListener('click', (e) => {
+        if (e.target.matches(prd)) {
+            $prd.classList.add('none')
+           
+        }  
+    })
+   
+
+    d.addEventListener('click', (e) => {
         if (e.target.matches(btn2)) {
             $textEscri.classList.add('none'),
                 $textAle.classList.remove('none'),
-            $imgEscriOne.classList.add('none'),
+                $imgEscriOne.classList.add('none'),
                 $imgAlemanOne.classList.remove('none'),
                 $imgEscriTwo.classList.add('none'),
                 $imgAlemanaTwo.classList.remove('none'),
