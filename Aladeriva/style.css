@@ -17,7 +17,7 @@
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
     --font: 'Poppins', 'Open+Sans';
-    --max-width: 1500px;
+    --max-width: 1200px;
     --header-height: 3.0rem;
 }
 
@@ -444,7 +444,6 @@ input:checked+.slide-container .nav label {
 .hero-image {
     background-image: var(--hero-image);
     background-repeat: no-repeat;
-
     background-position: center;
     background-attachment: var(--hero-attachment);
 }
@@ -644,6 +643,13 @@ progress::-moz-progress-bar {
     margin-right: auto;
     max-width: var(--max-width)
 }
+
+.conta {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width)
+}
+
 
 .gray-scale {
     filter: grayscale(1);
@@ -867,15 +873,15 @@ progress::-moz-progress-bar {
         grid-column: span 2;
     }
 
-    /*DISPLAY 1 FRA*/
+    /*DISPLAY 1 FRA ESPACIO TITULOS*/
     .services>.container {
         display: grid;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(2, 48%);
         justify-content: space-between;
         align-content: center;
     }
 
-    .servicesn>.containern{
+    .servicesn>.containern {
         display: grid;
         grid-template-columns: repeat(2, 45%);
         justify-content: space-between;
@@ -893,7 +899,7 @@ progress::-moz-progress-bar {
     }
 
     .portfolio-info {
-        margin-left: 1rem;
+        margin-left: rem;
         align-self: center;
     }
 }
@@ -966,11 +972,24 @@ progress::-moz-progress-bar {
         display: none;
     }
 
+
+
 }
 
 /*desktop*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
+    .services>.container {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+
+/*desktop*/
+@media screen and (max-width: 1024px) {
 
     .xx {
         display: inline-block;
