@@ -857,8 +857,19 @@ progress::-moz-progress-bar {
 
 
 
+
+
 /** tablet*/
 @media screen and (min-width: 768px) {
+    .marginderecha{
+        margin-top: -150px;
+    }
+    .feo{
+        margin-top: -375px;
+    } 
+    .margindos{
+        margin-top: -185px;
+    }
   
     .contact-cards {
         display: grid;
@@ -919,6 +930,16 @@ progress::-moz-progress-bar {
     .feo{
         margin-top: -240px;
     } */
+    .feo{
+        margin-top: -292px;
+    } 
+    .margindos{
+        margin-top: -160px;
+    }
+
+    .marginderecha{
+        margin-top: -80px;
+    }
 
     .footer {
         margin-bottom: 0;
@@ -989,6 +1010,7 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
+
 
     .services>.container {
         display: grid;
