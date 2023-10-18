@@ -446,6 +446,7 @@ input:checked+.slide-container .nav label {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: var(--hero-attachment);
+    width: var(--hero-width);
 }
 
 .hero-image-opacity {
@@ -858,6 +859,7 @@ progress::-moz-progress-bar {
 
 /** tablet*/
 @media screen and (min-width: 768px) {
+  
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -908,6 +910,15 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
+   /* .margintres{
+        margin-top: -60px;
+    }
+    .margindos{
+        margin-top: -160px;
+    }
+    .feo{
+        margin-top: -240px;
+    } */
 
     .footer {
         margin-bottom: 0;
@@ -991,6 +1002,7 @@ progress::-moz-progress-bar {
 /*desktop*/
 @media screen and (max-width: 1024px) {
 
+    
     .xx {
         display: inline-block;
     }
@@ -1203,3 +1215,8 @@ progress::-moz-progress-bar {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
+
+.text-justify {
+    text-align: justify;
+  }
+
