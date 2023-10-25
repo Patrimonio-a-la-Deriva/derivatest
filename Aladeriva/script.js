@@ -14,7 +14,7 @@ d.addEventListener('DOMContentLoaded', (e) => {
     Boton2("#path13821", "#selector", ".modal", "#btn22", "#text", "#textalemana", "#imgEscritoresOne", "#imgAlemanaOne", "#imgAlemanaTwo", "#imgEscritoresTwo", "#imgEscritoresThree", "#imgAlemanaThree", "#stgocapitulo1", "#btn222", "#closeWindow", "#prd");
     Boton3("#path13071", "#selector", ".modaldos", "#btn2", "#textGenio", "#textBaquedano", "#cerrarProvidencia");
     Boton4("#path13000", "#selector");
-    Btncaps("#capituloOne","#patrihome", "#capUnoContent", "#fotohome");
+    Btncaps("#capituloOne","#patrihome", "#capUnoContent", "#fotohome","#capDosContent","#capituloTwo", "#captresContent", "#capituloTre");
 
 });
 ((d) => {

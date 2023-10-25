@@ -17,10 +17,13 @@
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
     --font: 'Poppins', 'Open+Sans';
-    --max-width: 1200px;
+    --max-width: 900px;
     --header-height: 3.0rem;
 }
 
+.svg{
+    margin-top: 100px;
+}
 /*Esta en 1200 max width
 /*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
 /* Reseteo */
@@ -921,6 +924,7 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
+    
    /* .margintres{
         margin-top: -60px;
     }
