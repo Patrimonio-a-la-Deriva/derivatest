@@ -21,9 +21,10 @@
     --header-height: 3.0rem;
 }
 
-.svg{
+.svg {
     margin-top: 100px;
 }
+
 /*Esta en 1200 max width
 /*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
 /* Reseteo */
@@ -225,6 +226,7 @@ ul.slides {
     display: block;
     position: relative;
     height: 600px;
+
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -255,8 +257,8 @@ ul.slides input {
     position: absolute;
     width: 100%;
 
-
-    height: 90%;
+/*ajustar titulo por debaje*/
+    height: 78%;
     top: 0;
     opacity: 0;
     transition: all .7s ease-in-out;
@@ -676,6 +678,7 @@ progress::-moz-progress-bar {
     margin: 2rem auto;
     padding: .5rem 1rem;
     text-align: center;
+    /*TITULO*/
     width: 250px;
     color: var(--title-color);
 }
@@ -694,6 +697,33 @@ progress::-moz-progress-bar {
 
 .text-right {
     text-align: right;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+.videop{
+    width: 100%;
+    height: 400px;
+}
+.imgcapone{
+    width: 40%;
+    height: auto;
+}
+
+.titlesize{
+    font-size: 20px;
+}
+.floatleft{
+    float: left;
+    margin-right: 20px;
+}
+.floatleft2{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
 }
 
 /* utilitarios para mover de posicion elementos*/
@@ -864,16 +894,21 @@ progress::-moz-progress-bar {
 
 /** tablet*/
 @media screen and (min-width: 768px) {
-    .marginderecha{
+
+    
+
+    .marginderecha {
         margin-top: -150px;
     }
-    .feo{
+
+    .feo {
         margin-top: -375px;
-    } 
-    .margindos{
+    }
+
+    .margindos {
         margin-top: -185px;
     }
-  
+
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -924,8 +959,8 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
-    
-   /* .margintres{
+
+    /* .margintres{
         margin-top: -60px;
     }
     .margindos{
@@ -934,14 +969,15 @@ progress::-moz-progress-bar {
     .feo{
         margin-top: -240px;
     } */
-    .feo{
+    .feo {
         margin-top: -292px;
-    } 
-    .margindos{
+    }
+
+    .margindos {
         margin-top: -160px;
     }
 
-    .marginderecha{
+    .marginderecha {
         margin-top: -80px;
     }
 
@@ -1027,8 +1063,8 @@ progress::-moz-progress-bar {
 
 /*desktop*/
 @media screen and (max-width: 1024px) {
-
     
+
     .xx {
         display: inline-block;
     }
@@ -1141,6 +1177,7 @@ progress::-moz-progress-bar {
     }
 
     /*+++++++++++++++++++++++++++++++++++++++++++++*/
+    
 
 }
 
@@ -1196,6 +1233,10 @@ progress::-moz-progress-bar {
     /* Black w/ opacity */
 }
 
+.hola{
+    display: none;
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -1244,5 +1285,4 @@ progress::-moz-progress-bar {
 
 .text-justify {
     text-align: justify;
-  }
-
+}

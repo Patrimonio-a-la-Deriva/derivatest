@@ -2,6 +2,7 @@ import Boton from "./boton.js";
 import Boton2 from "./boton2.js";
 import Boton3 from "./boton3.js";
 import Boton4 from "./boton4.js";
+import Boton5 from "./boton5.js";
 import Btncaps from "./btncaps.js";
 
 
@@ -11,7 +12,12 @@ const d = document;
 
 d.addEventListener('DOMContentLoaded', (e) => {
     Boton('#btn', "#text2", "#img2", "#img1", "#pr", "#monu", "#text3", "#imx1", "#imx12");
-    Boton2("#path13821", "#selector", ".modal", "#btn22", "#text", "#textalemana", "#imgEscritoresOne", "#imgAlemanaOne", "#imgAlemanaTwo", "#imgEscritoresTwo", "#imgEscritoresThree", "#imgAlemanaThree", "#stgocapitulo1", "#btn222", "#closeWindow", "#prd");
+    Boton2("#path13821", "#selector", ".modal", "#closeWindow", "#escrione", "#escrionetext","#btn22","#aleone","#aleonetext",
+    "#escridos", "#escridostext", "#aledos", "#aledostext", "#escritres","#escritrestext","#aletres", "#aletrestext",
+    "#textescritores", "#textalemana", "#titleone", "#btn222", "#btnbaque", "#btngenio", "#plazaone", "#plazaonetext",
+    "#geneone", "#geneonetext", "#textBaquedano", "#textGenio","#titleprovi");
+
+    Boton5("#path13000", "#selector", ".modaltres", "#cerrarsanmiguel");
     Boton3("#path13071", "#selector", ".modaldos", "#btn2", "#textGenio", "#textBaquedano", "#cerrarProvidencia");
     Boton4("#path13000", "#selector");
     Btncaps("#capituloOne","#patrihome", "#capUnoContent", "#fotohome","#capDosContent","#capituloTwo", "#captresContent", "#capituloTre");
