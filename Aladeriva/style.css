@@ -257,7 +257,7 @@ ul.slides input {
     position: absolute;
     width: 100%;
 
-/*ajustar titulo por debaje*/
+    /*ajustar titulo por debaje*/
     height: 78%;
     top: 0;
     opacity: 0;
@@ -322,6 +322,11 @@ ul.slides input {
     bottom: 20px;
     z-index: 999;
     text-align: center;
+}
+
+.ley {
+    width: 100%;
+    height: auto;
 }
 
 /* BOtones imag*/
@@ -703,27 +708,74 @@ video {
     width: 100%;
     height: auto;
     text-align: center;
-  }
-.videop{
+}
+
+.videop {
     width: 100%;
     height: 400px;
 }
-.imgcapone{
+
+.imgcapone {
     width: 40%;
     height: auto;
 }
 
-.titlesize{
+.titlesize {
     font-size: 20px;
 }
-.floatleft{
+
+.floatleft {
     float: left;
     margin-right: 20px;
 }
-.floatleft2{
+
+.floatleft2 {
     width: 40%;
     float: left;
     margin-right: 20px;
+}
+
+.floatleft22 {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+}
+
+.floatleft222 {
+    width: 45%;
+    height: 420px;
+    float: left;
+    margin-right: 20px;
+}
+
+.floatcasta {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+}
+
+.floatt {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+}
+
+.floo {
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.floatleft3 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.gardel {
+    width: 100%;
+    height: 500px;
 }
 
 /* utilitarios para mover de posicion elementos*/
@@ -888,14 +940,25 @@ video {
     cursor: pointer;
 }
 
+.le {
+    float: left;
+}
 
-
+.center {
+    text-align: center;
+    align-content: center;
+}
 
 
 /** tablet*/
 @media screen and (min-width: 768px) {
+    .floo {
+        width: 45%;
+        height: 630px;
+        float: left;
+        margin-right: 20px;
+    }
 
-    
 
     .marginderecha {
         margin-top: -150px;
@@ -1058,12 +1121,19 @@ video {
         justify-content: space-between;
         align-content: center;
     }
+
+    .floo {
+        width: 45%;
+        height: 630px;
+        float: left;
+        margin-right: 20px;
+    }
 }
 
 
 /*desktop*/
 @media screen and (max-width: 1024px) {
-    
+
 
     .xx {
         display: inline-block;
@@ -1177,7 +1247,7 @@ video {
     }
 
     /*+++++++++++++++++++++++++++++++++++++++++++++*/
-    
+
 
 }
 
@@ -1233,7 +1303,7 @@ video {
     /* Black w/ opacity */
 }
 
-.hola{
+.hola {
     display: none;
 }
 
