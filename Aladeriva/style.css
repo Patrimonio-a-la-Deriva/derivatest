@@ -258,7 +258,7 @@ ul.slides input {
     width: 100%;
 
     /*ajustar titulo por debaje*/
-    height: 78%;
+    height: 74%;
     top: 0;
     opacity: 0;
     transition: all .7s ease-in-out;
@@ -743,7 +743,7 @@ video {
 
 .floatleft222 {
     width: 45%;
-    height: 420px;
+    height: 40px;
     float: left;
     margin-right: 20px;
 }
@@ -1332,6 +1332,10 @@ video {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#path12965{
+    cursor: zoom-in;
 }
 
 .modaldos {

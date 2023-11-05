@@ -1,3 +1,4 @@
+import Boton6 from "./assets/boton6.js";
 import Boton from "./boton.js";
 import Boton2 from "./boton2.js";
 import Boton3 from "./boton3.js";
@@ -12,11 +13,13 @@ const d = document;
 
 d.addEventListener('DOMContentLoaded', (e) => {
     Boton('#btn', "#text2", "#img2", "#img1", "#pr", "#monu", "#text3", "#imx1", "#imx12");
-    Boton2("#path13821", "#selector", ".modal", "#closeWindow", "#escrione", "#escrionetext","#btn22","#aleone","#aleonetext",
-    "#escridos", "#escridostext", "#aledos", "#aledostext", "#escritres","#escritrestext","#aletres", "#aletrestext",
-    "#textescritores", "#textalemana", "#titleone", "#btn222", "#btnbaque", "#btngenio", "#plazaone", "#plazaonetext",
-    "#geneone", "#geneonetext", "#textBaquedano", "#textGenio","#titleprovi");
-
+    Boton2("#path13821", "#selector", ".modal", "#closeWindow", "#santiagosantiago", "#santiagoalemana","#santiagoescritores","#textsantiago","#carrosantiago",
+    "#textalemana","#carroalemana", "#textescritores", "#carroescritores", "#titleSantiago",
+    "#textprovi","#carroprovi","#textbaquedano","#carrobaquedano","#textgenio","#carrolibertad", "#btnprovi", "#btnbaque", "#btngenio", "#titleprovi",
+    "#textsanmiguel","#carrosanmiguel","#textcarlos","#carrocarlos","#textgabriela","#carrogabriela","#titlesanmiguel","#btnsanmiguel","#btncarlos","#btngabriela");
+   
+    Boton6("#path12965", "#selector", ".modalcuatro", "#cerrarestacion", "#textestacion", "#carroestacion","#textvilla","#carrovilla","#titleestacion",
+    "#btnestacion", "#btnvilla");
     Boton5("#path13000", "#selector", ".modaltres", "#cerrarsanmiguel");
     Boton3("#path13071", "#selector", ".modaldos", "#btn2", "#textGenio", "#textBaquedano", "#cerrarProvidencia");
     Boton4("#path13000", "#selector");

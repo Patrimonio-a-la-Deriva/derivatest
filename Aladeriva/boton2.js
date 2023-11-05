@@ -3,40 +3,43 @@ const d = document,
 
 
 
-export default function Boton2(pr, selector, modal, closeWindow, escrione, escrionetext, btn22, aleone, aleonetext,
-    escridos, escridostext, aledos, aledostext, escritres, escritrestext, aletres, aletrestext,
-    textescritores, textalemana, titulouo, btn222,
-    btnbaque, btngenio, plazaone, plazaonetext, geneone, geneonetext, textBaquedano, textGenio,
-    titleprovi) {
+export default function Boton2(pr, selector, modal, closeWindow, btnsantiago, btnalemana, btnescritores,
+    textsantiago, carrosantiago, textalemana, carroalemana, textescritores, carroescritores, titlesantiago,
+    textprovi, carroprovi, textbaquedano, carrobaquedano, textgenio, carrogenio, btnprovi, btnbaque, btngenio, titleprovi,
+    textsanmiguel, carrosanmiguel, textcarlos, carrocarlos, textgabriela, carrogabriela, titlesanmiguel, btnsanmiguel, btncarlos, btngabriela) {
     const $pr = d.querySelector(pr),
         $select = d.querySelector(selector),
         $modal = d.querySelector(modal),
-        $escrione = d.querySelector(escrione),
-        $escrionetext = d.querySelector(escrionetext),
-        $btn22 = d.querySelector(btn22),
-        $aleone = d.querySelector(aleone),
-        $aleonetext = d.querySelector(aleonetext),
-        $escridos = d.querySelector(escridos),
-        $escridostext = d.querySelector(escridostext),
-        $aledos = d.querySelector(aledos),
-        $aledostext = d.querySelector(aledostext),
-        $escritres = d.querySelector(escritres),
-        $escritrestext = d.querySelector(escritrestext),
-        $aletres = d.querySelector(aletres),
-        $aletrestext = d.querySelector(aletrestext),
-        $textoEscritores = d.querySelector(textescritores),
-        $textoAlemana = d.querySelector(textalemana),
-        $tituloUno = d.querySelector(titulouo),
-        $btn222 = d.querySelector(btn222),
+        $btnsantiago = d.querySelector(btnsantiago),
+        $btnalemana = d.querySelector(btnalemana),
+        $btnescritores = d.querySelector(btnescritores),
+        $textsantiago = d.querySelector(textsantiago),
+        $carrosantiago = d.querySelector(carrosantiago),
+        $textalemana = d.querySelector(textalemana),
+        $carroalemana = d.querySelector(carroalemana),
+        $textescritores = d.querySelector(textescritores),
+        $carroescritores = d.querySelector(carroescritores),
+        $titlesantiago = d.querySelector(titlesantiago),
+        $textprovi = d.querySelector(textprovi),
+        $carroprovi = d.querySelector(carroprovi),
+        $textbaque = d.querySelector(textbaquedano),
+        $carrobaque = d.querySelector(carrobaquedano),
+        $textgenio = d.querySelector(textgenio),
+        $carrogenio = d.querySelector(carrogenio),
+        $btnprovi = d.querySelector(btnprovi),
         $btnbaque = d.querySelector(btnbaque),
         $btngenio = d.querySelector(btngenio),
-        $plazaone = d.querySelector(plazaone),
-        $plazaonetext = d.querySelector(plazaonetext),
-        $genioone = d.querySelector(geneone),
-        $genioonetext = d.querySelector(geneonetext),
-        $textBaquedano = d.querySelector(textBaquedano),
-        $textGenio = d.querySelector(textGenio),
-        $titleprovi = d.querySelector(titleprovi);
+        $titleprovi = d.querySelector(titleprovi),
+        $textsanmiguel = d.querySelector(textsanmiguel),
+        $carrosanmiguel = d.querySelector(carrosanmiguel),
+        $textcarlos = d.querySelector(textcarlos),
+        $carrocarlos = d.querySelector(carrocarlos),
+        $textgabriela = d.querySelector(textgabriela),
+        $carrogabriela = d.querySelector(carrogabriela),
+        $titlesanmiguel = d.querySelector(titlesanmiguel),
+        $btnsanmiguel = d.querySelector(btnsanmiguel),
+        $btncarlos = d.querySelector(btncarlos),
+        $btngabriela = d.querySelector(btngabriela);
 
 
     d.addEventListener('mouseover', (e) => {
@@ -59,44 +62,68 @@ export default function Boton2(pr, selector, modal, closeWindow, escrione, escri
             $modal.classList.add('none')
         }
     })
+    /* boton santiago */
+    d.addEventListener('click', (e) => {
+        if (e.target.matches(btnsantiago)) {
+            $titlesantiago.textContent = 'Santiago'
+            $textsantiago.classList.remove('none'),
+                $carrosantiago.classList.remove('none'),
+                $textalemana.classList.add('none'),
+                $carroalemana.classList.add('none'),
+                $textescritores.classList.add('none'),
+                $carroescritores.classList.add('none');
+        }
+    })
     /* boton fuente alemana */
     d.addEventListener('click', (e) => {
-        if (e.target.matches(btn22)) {
-            $escrione.classList.add('hola'),
-                $escrionetext.classList.add('hola'),
-                $aleone.classList.remove('none'),
-                $aleonetext.classList.remove('none'),
-                $escridos.classList.add('hola'),
-                $escridostext.classList.add('hola'),
-                $aledos.classList.remove('none'),
-                $aledostext.classList.remove('none'),
-                $escritres.classList.add('hola'),
-                $escritrestext.classList.add('hola'),
-                $aletres.classList.remove('none'),
-                $aletrestext.classList.remove('none'),
-                $textoEscritores.classList.add('hola'),
-                $textoAlemana.classList.remove('none'),
-                $tituloUno.textContent = 'Fuente Alemana';
+        if (e.target.matches(btnalemana)) {
+            $titlesantiago.textContent = 'Fuente Alemana'
+            $textsantiago.classList.add('none'),
+                $carrosantiago.classList.add('none'),
+                $textalemana.classList.remove('none'),
+                $carroalemana.classList.remove('none'),
+                $textescritores.classList.add('none'),
+                $carroescritores.classList.add('none');
         }
     })
     /* boton escritores */
     d.addEventListener('click', (e) => {
-        if (e.target.matches(btn222)) {
-            $escrione.classList.remove('hola'),
-                $escrionetext.classList.remove('hola'),
-                $aleone.classList.add('none'),
-                $aleonetext.classList.add('none'),
-                $escridos.classList.remove('hola'),
-                $escridostext.classList.remove('hola'),
-                $aledos.classList.add('none'),
-                $aledostext.classList.add('none'),
-                $escritres.classList.remove('hola'),
-                $escritrestext.classList.remove('hola'),
-                $aletres.classList.add('none'),
-                $aletrestext.classList.add('none'),
-                $textoEscritores.classList.remove('hola'),
-                $textoAlemana.classList.add('none'),
-                $tituloUno.textContent = 'Escritores de la Independencia';
+        if (e.target.matches(btnescritores)) {
+            $titlesantiago.textContent = 'Escritores de la Independencia'
+            $textsantiago.classList.add('none'),
+                $carrosantiago.classList.add('none'),
+                $textescritores.classList.remove('none'),
+                $carroescritores.classList.remove('none'),
+                $textalemana.classList.add('none'),
+                $carroalemana.classList.add('none');
+        }
+    })
+
+    /* Boton PROVI */
+    d.addEventListener('click', (e) => {
+        if (e.target.matches(btnprovi)) {
+            $titleprovi.textContent = 'Providencia'
+            $textbaque.classList.add('none'),
+                $carrobaque.classList.add('none');
+            $textgenio.classList.add('none'),
+                $carrogenio.classList.add('none');
+            $textprovi.classList.remove('none'),
+                $carroprovi.classList.remove('none');
+
+        }
+    })
+
+    /* Boton Baque */
+    d.addEventListener('click', (e) => {
+        if (e.target.matches(btnbaque)) {
+            $titleprovi.textContent = 'General Baquedano'
+            $textprovi.classList.add('none'),
+                $carroprovi.classList.add('none'),
+                $textbaque.classList.remove('none'),
+                $carrobaque.classList.remove('none');
+            $textgenio.classList.add('none'),
+                $carrogenio.classList.add('none');
+
         }
     })
 
@@ -104,30 +131,57 @@ export default function Boton2(pr, selector, modal, closeWindow, escrione, escri
 
     d.addEventListener('click', (e) => {
         if (e.target.matches(btngenio)) {
-            $plazaone.classList.add('none'),
-                $plazaonetext.classList.add('none'),
-                $genioone.classList.remove('none'),
-                $genioonetext.classList.remove('none'),
-                $textBaquedano.classList.add('none'),
-                $textGenio.classList.remove('none'),
-                $titleprovi.textContent = 'Genio de la Libertad'
-
+            $titleprovi.textContent = 'Genio de la Libertad'
+                $textgenio.classList.remove('none'),
+                $carrogenio.classList.remove('none'),
+                $textbaque.classList.add('none'),
+                $carrobaque.classList.add('none'),
+                $textprovi.classList.add('none'),
+                $carroprovi.classList.add('none');
+                
         }
     })
 
-
-    /* Boton Baque */
+    /* Boton San miguel */
     d.addEventListener('click', (e) => {
-        if (e.target.matches(btnbaque)) {
-            $plazaone.classList.remove('none'),
-                $plazaonetext.classList.remove('none'),
-                $genioone.classList.add('none'),
-                $genioonetext.classList.add('none'),
-                $textBaquedano.classList.remove('none'),
-                $textGenio.classList.add('none'),
-                $titleprovi.textContent = 'General Baquedano'
-
+        if (e.target.matches(btnsanmiguel)) {
+            $titlesanmiguel.textContent = 'San Miguel',
+            $textcarlos.classList.add('none'),
+          $carrocarlos.classList.add('none'),
+          $textgabriela.classList.add('none'),
+          $carrogabriela.classList.add('none');
+          $textsanmiguel.classList.remove('none'),
+          $carrosanmiguel.classList.remove('none');
         }
     })
+
+    /* Boton Carlos Gardel */
+    d.addEventListener('click', (e) => {
+        if (e.target.matches(btncarlos)) {
+          $titlesanmiguel.textContent = 'Carlos Gardel'
+          $textsanmiguel.classList.add('none'),
+          $carrosanmiguel.classList.add('none'),
+          $textgabriela.classList.add('none'),
+          $carrogabriela.classList.add('none');
+          $textcarlos.classList.remove('none'),
+          $carrocarlos.classList.remove('none');
+        }
+    })
+
+    /* Boton Gabrilea */
+    d.addEventListener('click', (e) => {
+        if (e.target.matches(btngabriela)) {
+            $titlesanmiguel.textContent = 'Gabriela Mistral'
+            $textsanmiguel.classList.add('none'),
+          $carrosanmiguel.classList.add('none'),
+          $textcarlos.classList.add('none'),
+          $carrocarlos.classList.add('none');
+          $textgabriela.classList.remove('none'),
+          $carrogabriela.classList.remove('none');
+        }
+    })
+
+
+
 }
 
