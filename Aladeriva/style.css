@@ -1212,8 +1212,9 @@ video {
     .slide-image img {
         width: auto;
         align-items: center;
-        min-width: 50%;
-        height: 200%;
+        /*esto cambio*/
+        min-width: 100%;
+        height: auto;
         border-radius: 1%;
 
     }
