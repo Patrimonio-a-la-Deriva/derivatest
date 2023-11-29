@@ -25,6 +25,7 @@ d.addEventListener('DOMContentLoaded', (e) => {
     Boton4("#path13000", "#selector");
     Btncaps("#capituloOne","#patrihome", "#capUnoContent", "#fotohome","#capDosContent","#capituloTwo", "#captresContent", "#capituloTre");
 
+
 });
 ((d) => {
     const $btnMenu = d.querySelector('.menu-btn'),

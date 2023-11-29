@@ -13,6 +13,14 @@ export default function Boton6(path, selector, modaltres, closeWindow, textestac
         $titleestacion = d.querySelector(titleestacion),
         $btnestacion = d.querySelector(btnestacion),
         $btnvilla = d.querySelector(btnvilla);
+
+
+        d.addEventListener('mouseover', (e) => {
+
+            if (e.target.matches(path)) {
+                $selector.textContent = 'Estacion Central'
+            }
+        })
     d.addEventListener('click', (e) => {
         if (e.target.matches(path)) {
             $modaltres.classList.remove('none')
