@@ -38,6 +38,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 *,
 *::after,
 *::before {
@@ -742,6 +746,8 @@ video {
 .floatleft {
     float: left;
     margin-right: 20px;
+    width: 45%;
+    height: 380px;
 }
 
 .floatleft2 {
@@ -758,19 +764,24 @@ video {
 
 .floatleft222 {
  
-    
+    width: 45%;
     float: left;
     margin-right: 20px;
 }
 
 .floatcasta {
-    width: 60%;
+    width: 65%;
+    height: 480px;
     float: left;
     margin-right: 20px;
 }
 
+.top{
+    margin-bottom: 100px;
+}
+
 .floatt {
-    width: 60%;
+    width: 45%;
     float: left;
     margin-right: 20px;
 }
@@ -970,6 +981,15 @@ video {
 @media screen and (min-width: 768px) {
 
     
+/** Margenes entrevista n jose */
+    .az{
+        margin-top: -50px; 
+    }
+
+    .az3{
+        margin-top: -150px;
+    }
+
     .floo {
         width: 45%;
         height: 630px;
@@ -1040,7 +1060,6 @@ video {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
-
 
 
     /* .margintres{
@@ -1133,8 +1152,8 @@ video {
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
-    
 
+   
     .services>.container {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -1154,6 +1173,18 @@ video {
 /*desktop*/
 @media screen and (max-width: 1024px) {
 
+    .floatleft222 {
+ 
+        width: 40%;
+        float: left;
+        margin-right: 20px;
+    }
+    /*Casta Pequeño*/
+    .floatcasta {
+        width: 100%;
+        float: left;
+        margin-right: 20px;
+    }
 
     .xx {
         display: inline-block;
@@ -1203,7 +1234,7 @@ video {
         margin-left: -5%;
         margin-right: -5%;
     }
-    .peo {
+    .margx {
         background-color: #fefefe;
         margin: 15% auto;
         /* 15% from the top and centered */
@@ -1344,8 +1375,12 @@ video {
 
 .pie{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
+    font-style: italic;
+
 }
+
+
 
 .hola {
     display: none;
@@ -1407,8 +1442,58 @@ video {
 
 
 @media screen and (min-width: 1024px) {
-.peo{
+    
+.margx{
     width: 60%;
 
+}
+  /* margenes María José Larrondo */
+.az{
+    margin-top: 1px; 
+} 
+
+.az2{
+    margin-top: -20px;
+}
+
+.az3{
+    margin-top: -60px;
+}
+
+.az4{
+    margin-top: -70px;
+}
+
+.az5{
+    margin-top: -70px;
+}
+
+.az6{
+    margin-top: -70px;
+}
+
+  /* margenes mapa maps */
+
+  .az7{
+    margin-top: -70px;
+}
+
+.az8{
+    margin-top: -90px;
+}
+
+.az9{
+    margin-top: -120px;
+}
+
+.az10{
+    margin-top: -50px;
+}
+.az11{
+    margin-top: -163px;
+}
+
+.az12{
+    margin-top: 1px;
 }
 }
